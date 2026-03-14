@@ -1,69 +1,185 @@
-body{
-font-family: Arial, Helvetica, sans-serif;
-background: linear-gradient(135deg,#2c3e50,#4ca1af);
+*{
 margin:0;
 padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI",sans-serif;
 }
+
+/* PAGE BACKGROUND */
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+min-height:100vh;
+color:#333;
+}
+
+/* HEADER */
+
+.app-header{
+text-align:center;
+color:white;
+padding:25px 0;
+}
+
+.app-header h1{
+font-size:30px;
+}
+
+.app-header p{
+opacity:0.8;
+font-size:14px;
+}
+
+/* APP CONTAINER */
+
+.app-container{
+display:flex;
+justify-content:center;
+margin-top:10px;
+}
+
+/* CARD */
 
 .container{
-width:520px;
-margin:auto;
-margin-top:60px;
+
+width:420px;
+
 background:white;
+
 padding:30px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+border-radius:14px;
+
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
 }
 
-h1{
-text-align:center;
-margin-bottom:25px;
-}
+/* LABEL */
 
 label{
-font-weight:bold;
+font-weight:600;
+margin-top:12px;
+display:block;
 }
+
+/* SELECT */
 
 select{
 width:100%;
 padding:10px;
-margin-top:5px;
-border-radius:6px;
+margin-top:6px;
+
+border-radius:8px;
 border:1px solid #ccc;
-font-size:14px;
+
+transition:0.2s;
 }
 
+select:focus{
+outline:none;
+border-color:#3498db;
+box-shadow:0 0 5px rgba(52,152,219,0.5);
+}
+
+/* BUTTON */
+
 button{
+
 width:100%;
 margin-top:20px;
+
 padding:12px;
+
 border:none;
-border-radius:6px;
-background:#3498db;
+border-radius:8px;
+
+background:linear-gradient(135deg,#3498db,#2980b9);
+
 color:white;
+
 font-size:16px;
+font-weight:600;
+
 cursor:pointer;
+
 transition:0.3s;
 }
 
 button:hover{
-background:#2980b9;
+
+transform:translateY(-2px);
+
+box-shadow:0 10px 20px rgba(0,0,0,0.25);
 }
+
+/* RESULT BOX */
 
 .result-box{
-margin-top:25px;
-padding:15px;
-background:#ecf9ff;
+
+margin-top:20px;
+
+padding:18px;
+
+background:#f4faff;
+
 border-left:5px solid #3498db;
-border-radius:6px;
+
+border-radius:8px;
+
+line-height:1.6;
+
+animation:fadeIn 0.4s ease;
 }
 
+/* MAP SECTION */
+
 .map-box{
-margin-top:25px;
-border-radius:8px;
-overflow:hidden;
+
+width:95%;
+
+max-width:1200px;
+
+margin:40px auto;
+
+background:white;
+
+padding:15px;
+
+border-radius:12px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+.map-box h3{
+
+margin-bottom:10px;
+
+font-weight:600;
 }
 
 iframe{
-border-radius:8px;
+
+width:100%;
+
+height:450px;
+
+border-radius:10px;
+
+border:none;
 }
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(10px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
