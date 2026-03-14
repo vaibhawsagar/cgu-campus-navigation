@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>CGU Campus Navigation</title>
 
 <link rel="stylesheet" href="style.css">
 
-
-
 </head>
 
 <body>
 
+<!-- HEADER -->
+
+<header class="app-header">
+<h1>🧭 CGU Campus Navigator</h1>
+<p>Shortest Path Finder using Dijkstra's Algorithm</p>
+</header>
+
+
+<!-- ROUTE FINDER CARD -->
+
+<div class="app-container">
+
 <div class="container">
 
-<h1>CGU Campus Navigation System</h1>
-
-<div class="form-box">
-
-<label>From:</label>
+<label>From</label>
 
 <select id="source">
 <option value="0">CGU Front Gate</option>
@@ -43,9 +53,8 @@
 <option value="19">CV Raman Global University Backgate</option>
 </select>
 
-<br><br>
 
-<label>To:</label>
+<label>To</label>
 
 <select id="destination">
 <option value="0">CGU Front Gate</option>
@@ -70,15 +79,18 @@
 <option value="19">CV Raman Global University Backgate</option>
 </select>
 
-<br><br>
 
 <button onclick="findPath()">Find Shortest Path</button>
 
-</div>
 
 <div id="result" class="result-box"></div>
 
 </div>
+
+</div>
+
+
+<!-- MAP SECTION -->
 
 <div class="map-box">
 
@@ -86,9 +98,6 @@
 
 <iframe
 id="campusMap"
-width="100%"
-height="450"
-style="border:0"
 loading="lazy"
 allowfullscreen
 src="https://maps.google.com/maps?q=CV Raman Global University&t=&z=16&ie=UTF8&iwloc=&output=embed">
@@ -96,7 +105,10 @@ src="https://maps.google.com/maps?q=CV Raman Global University&t=&z=16&ie=UTF8&i
 
 </div>
 
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
+
