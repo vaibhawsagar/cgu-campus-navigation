@@ -57,6 +57,7 @@ function addEdge(u, v, w) {
 // Graph edges
 addEdge(0,1,82);
 addEdge(0,2,92);
+addEdge(0,18,500);
 
 addEdge(1,3,100);
 addEdge(1,2,120);
