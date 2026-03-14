@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>CGU Campus Navigation</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>CGU Campus Navigation System</h1>
+
+<div class="form-box">
+
+<label>From:</label>
+
+<select id="source">
+<option value="0">CGU Front Gate</option>
+<option value="1">Diploma Department</option>
+<option value="2">CV Raman Department of MBA</option>
+<option value="3">Cricket Ground</option>
+<option value="4">DSW Playground</option>
+<option value="5">CV Raman Swimming Pool</option>
+<option value="6">Medical Dispensary</option>
+<option value="7">Boys Canteen</option>
+<option value="8">Girls Canteen</option>
+<option value="9">CV Raman Basketball Court</option>
+<option value="10">RIHC Auditorium</option>
+<option value="11">CV Raman Central Library</option>
+<option value="12">CSE Block</option>
+<option value="13">Mechanical Department</option>
+<option value="14">ETC Building</option>
+<option value="15">Admission Cell</option>
+<option value="16">Bosch Rexroth Center of Excellence</option>
+<option value="17">CGU Volleyball Court</option>
+<option value="18">CSE Fountain</option>
+<option value="19">CV Raman Global University Backgate</option>
+</select>
+
+<br><br>
+
+<label>To:</label>
+
+<select id="destination">
+<option value="0">CGU Front Gate</option>
+<option value="1">Diploma Department</option>
+<option value="2">CV Raman Department of MBA</option>
+<option value="3">Cricket Ground</option>
+<option value="4">DSW Playground</option>
+<option value="5">CV Raman Swimming Pool</option>
+<option value="6">Medical Dispensary</option>
+<option value="7">Boys Canteen</option>
+<option value="8">Girls Canteen</option>
+<option value="9">CV Raman Basketball Court</option>
+<option value="10">RIHC Auditorium</option>
+<option value="11">CV Raman Central Library</option>
+<option value="12">CSE Block</option>
+<option value="13">Mechanical Department</option>
+<option value="14">ETC Building</option>
+<option value="15">Admission Cell</option>
+<option value="16">Bosch Rexroth Center of Excellence</option>
+<option value="17">CGU Volleyball Court</option>
+<option value="18">CSE Fountain</option>
+<option value="19">CV Raman Global University Backgate</option>
+</select>
+
+<br><br>
+
+<button onclick="findPath()">Find Shortest Path</button>
+
+</div>
+
+<div id="result" class="result-box"></div>
+
+</div>
+
+<div class="map-box">
+
+<h3>Campus Map</h3>
+
+<iframe
+id="campusMap"
+width="100%"
+height="450"
+style="border:0"
+loading="lazy"
+allowfullscreen
+src="https://maps.google.com/maps?q=CV Raman Global University&t=&z=16&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
