@@ -144,6 +144,8 @@ int main()
     graph[0][1] = graph[1][0] = 82;
     graph[0][2] = graph[2][0] = 92;
     graph[0][18] = graph[18][0] = 500;
+    graph[0][8] = graph[8][0] = 550;
+
 
     // Diploma Department
     graph[1][3] = graph[3][1] = 100;
